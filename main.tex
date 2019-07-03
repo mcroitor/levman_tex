@@ -5,22 +5,34 @@
 \usepackage{soulutf8}
 \usepackage{wrapfig}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    pdftitle={Современная шахматная задача},
+    bookmarks=true
+}
+
 % page layout set
 \usepackage[top=1.2cm, bottom=1.7cm, left=1cm, right=1cm]{geometry}
 \pagestyle{plain}
 \newcommand{\diagramsize}{smallboard} % {normalboard} %
+\newcounter{diagram_counter}
 
 \title{Современная шахматная задача}
 \author{C. С. Левман}
 \date{1927}
 
 \begin{document}
-
-% \frontmatter
-\maketitle
+\input{./titlepage.tex}
+\frontmatter
+\pagenumbering{Roman}
 \tableofcontents
+\mainmatter
+\pagenumbering{arabic}
 
-% \mainmatter
 \input{./chapters/from_author.tex}
 \input{./chapters/intro.tex}
 \input{./chapters/01_chapter.tex}
