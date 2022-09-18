@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+
+<head>
+  <title>современная шахматная задача 1</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+
+  <h1>VIII. Полусвязывание.</h1>
+
+  <p>Тема полусвязывания появилась и стала разрабатываться сравнительно недавно, немногим  больше 10 лет тому назад. Собственно говоря, комбинация, лежащая в основе этой темы, была и ранее известна, но на нее не обращали никакого внимания, — до той поры, пока  ново-американская школа не показала, как много нового и интересного таит в себе эта тема.</p>
+
+  <p>Состоит эта тема в следующем. На одной линии с черным королем стоит дальнобойная белая  фигура (ферзь, ладья, слон), а между ними стоят какие-нибудь две черные фигуры. Пока  обе фигуры стоят на этой линии, каждая из них может свободно двигаться и уйти с этой  линии. Но вот одна из этих фигур, в целях защиты или просто в силу необходимости сделать  ход, сошла с этой линии. Что сталось со второй черной фигурой? Она оказалась связанной.  То же случилось бы с первой черной фигурой, если бы отошла вторая. Таким образом, каждая  из них как бы полусвязана. Комбинация же состоит в том, что при отходе одной из черных  фигур белые имеют возможность матовать только потому, что оставшаяся на линии черная  фигура связана. Поясним примером:</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№105 К. Грабовский </div>
+    <div class="problem-title">II пр. "G. С.", март 1916</div>
+    <pre class="chess-diagram" l_href="#diagram105.png">!""""""""#
+$*+*+*+nL%
+$+*+r+bMt%
+$*+*+*+*O%
+$+*+*+*+*%
+$v+*+*+*+%
+$+*T*+*+*%
+$*+m+*+qV%
+$B*+*+*+k%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">n</span>e7).</div>
+
+  </div>
+
+  <p>В задаче № 105 линией полусвязки является диагональ а1—h8. Между белым слоном и  черным королем стоят две черные фигуры, ладья и конь: Если двинется ладья, то  конь окажется связанным; если же отойдет конь, то связанной окажется ладья.  Таким образом, мы имеем в этой задаче такую позицию, которая может привести к  полусвязыванию ладьи или коня. Но пройдет ла эта комбинация, мы еще не знаем.  Это мы увидим лишь в процессе решения.</p>
+
+  <p>Итак, после первого хода белые грозят 2. <span class="chess-piece">n</span>g6X. Как защищаться черным? Двигать  коня d7 нехорошо, так как на любой его отход последует  2. <span class="chess-piece">q</span>g8X. Значит, нужно  защищаться ладьей. На  1. ... <span class="chess-piece">r</span>g3 последует  2. <span class="chess-piece">q</span>а8X! Почему  стал возможен этот мат? Во-первых, потому, что при отходе ладьи конь связан (это и есть  полусвязка!), но кроме того еще и потому, что ладья перекрыла слона h2.  Если же ладья защититься отмата ходом Лс6, то белые сыграют   2. <span class="chess-piece">r</span>d8X!  — снова полусвязка и перекрытие другого черного слона (при  1. ... <span class="chess-piece">r</span>e3   2. <span class="chess-piece">r</span>d8  не проходит из-за ответа 2. ... <span class="chess-piece">b</span>e8). Отсюда мы видим, что комбинация полусвязывания проходит в этой задаче дважды.</p>
+
+  <p>Но комбинация эта проходит лишь при движении одной из черных фигур, стоящих в  полусвязке, ладьи, — при движении же коня связка ладьи не имеет значения, т. е. комбинация полусвязывания не проходит. Такое полусвязывание, которое  проходит лишь в результате движения одной из полусвязанных фигур, называется <em>неполным</em>.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№106 К. Мэнсфильд </div>
+    <div class="problem-title">"British Chess Magazine", 1922</div>
+    <pre class="chess-diagram" l_href="#diagram106.png">!""""""""#
+$*+*+*+k+%
+$+*+*+*O*%
+$*+*+*+*V%
+$+*+*Pl+*%
+$*+q+*M*P%
+$+*B*+*R*%
+$*+*+*Mp+%
+$+*+*+r+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">r</span>g6).</div>
+
+  </div>
+
+  <p>В задаче № 106 мы видим уже <em>полное</em> полусвязывание.  Задача эта, построенная на цугцванге, принадлежит родоначальнику темы полусвязывания, английскому композитору К. Мэнсфильду. Мэнсфильд дал ряд великолепных образцов обработки  этой темы, некоторые из которых мы приведем в дальнейшем. В указанной выше задаче в  полусвязке стоят два черных коня. При любом движении коня f4 (кроме 1. ... <span class="chess-piece">n</span>xg6) белые матуют ходом  2. <span class="chess-piece">q</span>g4X (при связанном коне f2), а на  1. ... <span class="chess-piece">n</span>xg6 последует 2. g4X (опять полусвязка). При любом отходе коня f2 (кроме 1. ... <span class="chess-piece">n</span>e4) белые матуют ходом   2. <span class="chess-piece">q</span>d3X (при связанном коне f4), а на 1. ... <span class="chess-piece">n</span>е4  последует  2. <span class="chess-piece">q</span>е6X (четвертая полусвязка). В этой задаче комбинация получается в результате движения обеих полусвязанных фигур, т. е. является полной.</p>
+
+  <p>Уже из этих первых задач на тему полусвязывание мы можем сделать один существенный вывод: комбинация полусвязывания редко проходит в своем элементарном виде, т. е. редко бывает, чтобы одна из полусвязанных черных фигур, покидая линию полусвязки, <em>только</em>  связывала вторую черную фигуру. Обычно, она при этом делает еще кое-что: перекрывает  какую-нибудь другую фигуру, блокирует поле, дает мат и пр. Таким образом, тема  полусвязывания сочетается с другими темами ново-американской школы. В дальнейшем,  рассматривая различные комбинации с полусвязыванием, мы будем указывать, с какими  идеями переплетается тома полусвязывания.</p>
+
+  <p>Какие черные фигуры могут создать комбинацию полусвязки? Все, начиная от ферзя и  кончая пешкой. При этом этом могут быть и одинаковые фигуры (два коня, две ладьи) и различные (конь и ладья, слон и пешка и пр.), а полусвязывание может происходить  и по диагонали и по линии (горизонтальной или вертикальной).</p>
+
+  <p>Рассмотрим несколько случаев полусвязывания одинаковых черных фигур.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№107 С. Млотковский </div>
+    <div class="problem-title">III поч. отзыв "G. C.", 1919</div>
+    <pre class="chess-diagram" l_href="#diagram107.png">!""""""""#
+$*+*+*+v+%
+$B*+*+b+*%
+$*+*+t+*+%
+$+o+t+*+*%
+$*Ol+*+*+%
+$P*+*+q+*%
+$*+*+*+*+%
+$Kn+*+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">k</span>a2).</div>
+
+  </div>
+
+  <p>В первой из этих задач (№ 107) мы имеем диагональное полусвязывание двух ладей в  самом элементарном виде. В самом деле, защищаясь от мата ферзем на b3, черные  могут играть либо  1. ... <span class="chess-piece">r</span>e2 на что последует  2. <span class="chess-piece">q</span>xе2X  , либо  1. ... <span class="chess-piece">r</span>d3  2. <span class="chess-piece">q</span>с6X, либо  1. ... <span class="chess-piece">r</span>с5  2. <span class="chess-piece">q</span>e4X.  Конечно, при таком ограниченном количестве белых и черных фигур провести эту тему  полнее весьма трудно.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№108 А. Мари, А. Эллерман </div>
+    <div class="problem-title">II приз, "Brisbane Courier", 1926</div>
+    <pre class="chess-diagram" l_href="#diagram108.png">!""""""""#
+$b+*N*B*+%
+$+*+*T*+*%
+$*O*T*Oo+%
+$+*L*+w+r%
+$pO*+*+*O%
+$+p+*P*+*%
+$*+*R*N*+%
+$M*+*+kQ*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. <span class="chess-piece">q</span>h2).</div>
+
+  </div>
+
+  <p>Но вот в задаче № 108 мы находим прекрасную обработку этой темы, соединенной с  другими темами новой школы.</p>
+
+  <p>Белые грозят  2. <span class="chess-piece">q</span>d6X. Черные могут защищаться обеими ладьями. Но на   1. ... <span class="chess-piece">r</span>e7—d7 (или е6) последует  2. <span class="chess-piece">n</span>e6X. Интереснее игра  второй ладьи:  1. ... <span class="chess-piece">r</span>d6:d2 (или d3 и пр.)  2. <span class="chess-piece">q</span>с7X,   1. ... <span class="chess-piece">r</span>d6d7  2. <span class="chess-piece">n</span>e6X.  1. ... <span class="chess-piece">r</span>с6!  2. <span class="chess-piece">n</span>b7X. В последнем варианте мы имеем  сочетание полусвязывания с блокированием. Эта игра двух черных ладей, стоящих в  полусвязке, соединена в задаче с игрой черного ферзя:  1. ... <span class="chess-piece">q</span>e5  2. <span class="chess-piece">n</span>е4X! и   1. ... <span class="chess-piece">q</span>d5  2. <span class="chess-piece">n</span>d3X! (развязывание белого коня плюс перекрытия черных ладей).  Обе темы так тесно переплетены в задаче, что трудно сказать, какая из них является  основной — полусвязывание или развязывание.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№109 А. Эллерман </div>
+    <div class="problem-title">II пр. "G. C.", ноябрь 1917</div>
+    <pre class="chess-diagram" l_href="#diagram109.png">!""""""""#
+$*+*N*M*W%
+$+*M*+*+*%
+$v+*O*+oO%
+$R*TtL*+*%
+$*N*+*+p+%
+$+*+*+q+*%
+$*+*P*+oK%
+$V*+*+*B*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">k</span>g3).</div>
+
+  </div>
+
+  <p>Тему горизонтального полусвязывания двух черных ладей мы находим в прекрасной задаче  Эллермана (№ 109). Белые грозят  2. <span class="chess-piece">q</span>f4X. Идейные защиты черных таковы:   1. ... <span class="chess-piece">r</span>с4  2. <span class="chess-piece">n</span>d3X (полусвязывание плюс перекрытие слона а6),   1. ... <span class="chess-piece">r</span>с3 2. d4X (полусвязывание плюс перекрытие слона а1) и   1. ... <span class="chess-piece">r</span>d4  2. <span class="chess-piece">n</span>с6X (полусвязывание). Задача имеет еще несколько  вариантов, но уже без полусвязывания.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№110 Г. Гвиделли </div>
+    <div class="problem-title">I пр. "G. C.", январь 1917</div>
+    <pre class="chess-diagram" l_href="#diagram110.png">!""""""""#
+$k+l+*+*+%
+$MrB*+n+*%
+$p+*+*+*+%
+$+*V*+*+*%
+$oTvQ*+*O%
+$+*+t+o+*%
+$*+*+*+*+%
+$+*Rw+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. <span class="chess-piece">b</span>h2).</div>
+
+  </div>
+
+  <p>Прелестная комбинация с полусвязыванием двух слонов (конечно, в отношении слонов  возможно лишь горизонтальное или вертикальное полусвязывание) проведена в задаче № 110.  Правда, комбинация полусвязки проходит только в двух вариантах, но варианты сами по  себе великолепны. Грозит   2. <span class="chess-piece">r</span>с7X. Ha 1. ... <span class="chess-piece">b</span>d5!  последует  2. <span class="chess-piece">q</span>h7X! (полусвязка плюс перекрытие ладьи) и на  1. ... <span class="chess-piece">b</span>d6  2. <span class="chess-piece">q</span>g4X (полусвязка плюс перекрытие той же ладьи).  Только найдя оба эти варианта, можно понять смысл и тонкость первого хода. Слон должен  отступить именно на h2. так как на e5 или f4 он будет мешать двигаться белому ферзю  в тематических вариантах.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№111 А. Мари </div>
+    <div class="problem-title">I пр. конк. "Brisbane Courier", 1922</div>
+    <pre class="chess-diagram" l_href="#diagram111.png">!""""""""#
+$*+*M*+*+%
+$+o+k+*+*%
+$b+*O*+*+%
+$+*+l+tQ*%
+$*Po+*+*R%
+$+*+v+*+*%
+$*+tVn+*+%
+$B*+r+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. <span class="chess-piece">b</span>f6).</div>
+
+  </div>
+
+  <p>В задаче Г. Гвиделли мы имеем лишь два варианта с полусвязывания. В № 111, принадлежащем  знаменитому итальянскому композитору Альберто Мари, эта трудная тема проведена в четырех  прекрасных вариантах.</p>
+
+  <p>Грозит   2. <span class="chess-piece">r</span>d4X. Черные могут защищаться обоими слонами.  На 1. ... <span class="chess-piece">b</span>e4 последует  2. <span class="chess-piece">n</span>f4X, так как слон  d2 связан, а поле e4 заблокировано, что дает возможность выключить ладью h4.  Ha 1. ... <span class="chess-piece">b</span>с3 последует 2. <span class="chess-piece">b</span>xс4X — опять полусвязывание,  на этот раз с перекрытием ладьи с2. На 1. ... <span class="chess-piece">b</span>f4 белые ответят  2. <span class="chess-piece">q</span>g2X!, пользуясь полусвязкой слона, а также перекрытием ладьи f5, а на   1. ... <span class="chess-piece">q</span>е3  2. <span class="chess-piece">q</span>f5X. Тонкость первого хода становится ясна из варианта   1. ... <span class="chess-piece">n</span>с6  2. <span class="chess-piece">q</span>g8X, — необходимо первым же ходом перекрыть линию f, чтобы отрезать черную ладью от поля f7.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№112 Ф. Дженет </div>
+    <div class="problem-title">пр. "G. C.", май 1919</div>
+    <pre class="chess-diagram" l_href="#diagram112.png">!""""""""#
+$v+*+k+*+%
+$+bP*R*+o%
+$*+m+*P*+%
+$+*+mBo+*%
+$*Tp+lP*T%
+$+oPr+*+*%
+$*N*+*+o+%
+$+*Q*+*V*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">r</span>g3).</div>
+
+  </div>
+
+  <p>Примером вертикального полусвязывания двух коней может служить приведенная выше  задача № 106. Диагональную полусвязку их мы находим в задаче № 112. Угроза здесь   2. <span class="chess-piece">q</span>b1X. Главную игру дает конь d5. Ha  1. ... <span class="chess-piece">n</span>с7+  последует 2. <span class="chess-piece">b</span>c7X, на  1. ... <span class="chess-piece">n</span>xf6+ 2. <span class="chess-piece">b</span>xf6X, на   1. ... <span class="chess-piece">n</span>xf4 2. <span class="chess-piece">b</span>xf4X, а на  1. ... <span class="chess-piece">n</span>е3 2. <span class="chess-piece">b</span>d6X.  Ha  1. ... <span class="chess-piece">n</span>d4 также последует 2. <span class="chess-piece">b</span>xd4X, а на   1. ... <span class="chess-piece">n</span>xс3 2. <span class="chess-piece">b</span>xс3X.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№113 К.А.К. Ларсен </div>
+    <div class="problem-title">IV пр. "G. C.", ноябрь 1920</div>
+    <pre class="chess-diagram" l_href="#diagram113.png">!""""""""#
+$*+*+*+*+%
+$+*+*O*+*%
+$*+*+*+*+%
+$+o+*N*+t%
+$*K*Ro+*V%
+$+*+n+*+*%
+$b+lO*O*Q%
+$+r+*+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">n</span>g4).</div>
+
+  </div>
+
+  <p>Очень трудна тема полусвязывания двух пешек. Все же есть немало задач, где тема  эта хорошо проведена. В качестве примера приведем задачу известного датского  композитора К. A. К. Ларсена (№ 113): в ней полусвязывание черных пешек переплетается  с моментами их превращения в различные фигуры. Защищаясь от угрозы  2. <span class="chess-piece">n</span>е3X,  черные могут сыграть 1. ... f1=<span class="chess-piece">n</span>!, на что последует   2. <span class="chess-piece">r</span>с1X.  При защите 1. ... d1=<span class="chess-piece">n</span> белые играют 2. <span class="chess-piece">n</span>e1X, а при ходе 1. ... <span class="chess-piece">b</span>g5 следует  2. <span class="chess-piece">q</span>e7X.</p>
+
+  <p>Познакомившись с полусвязыванием одинаковых черных фигур, мы переходим к тем комбинациям,  которые возникают в результате полу- связывания различных фигур. Исчерпать все эти  сочетания мы, конечно, не можем, да этого и не требуется. Гораздо интереснее проследить,  как тема полусвязывания соединяется с другими важнейшими темами ново-американской школы.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№114 К. Вэтней </div>
+    <div class="problem-title">II пр. "G. C.", май 1920</div>
+    <pre class="chess-diagram" l_href="#diagram114.png">!""""""""#
+$v+*+q+*K%
+$OlTm+r+*%
+$o+*+*+r+%
+$OmO*P*+*%
+$n+*+*+*+%
+$+*+*+*+b%
+$*+*+*+*+%
+$+*+*+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">r</span>g8).</div>
+
+  </div>
+
+  <p>Возьмем хотя бы соединение полусвязывания с блокированием. Единичные случаи такого сочетания  мы встречали уже в №№ 106, 111, а теперь приведем задачу, получившую высокое отличие на  конкурсе, где было дано специальное задание: добиться, чтобы две черные фигуры,  полусвязанные по фронтали, то есть по горизонтальной или вертикальной линиям, четыре  раза блокировали поля рядом с королем, создавая тем самым четыре мата при полусвязке.  В результате этого конкурса оказалось, что добиться четырех блокирований при этом  условии нельзя. Максимально количество их — три, что и видно из задачи № 114.  Первый ход, отдающий черному королю поле, создает вместе с тем угрозу 2. <span class="chess-piece">q</span>xa8X.  Основные защиты черных:  1. ... <span class="chess-piece">r</span>c6  2. <span class="chess-piece">q</span>b8X (полусвязывание плюс блокирование),   1. ... <span class="chess-piece">n</span>b6 2. <span class="chess-piece">n</span>xc5X (полусвязывание плюс блокирование) и   1. ... <span class="chess-piece">n</span>b8 2. <span class="chess-piece">b</span>c8X! (полусвязывание плюс блокирование).</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№115 А. Боттаччи </div>
+    <div class="problem-title">"L`Italia Scacchistica", 1919</div>
+    <pre class="chess-diagram" l_href="#diagram115.png">!""""""""#
+$*+*+*+*+%
+$K*+*+*+*%
+$*+b+*+*+%
+$N*+*+o+*%
+$m+*L*+*+%
+$P*T*+*+*%
+$*Mo+*P*+%
+$B*N*Q*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. f4).</div>
+
+  </div>
+
+  <p>Оказывается, что четырех блокирований с полусвязыванием можно добиться, но лишь при  диагональной полусвязке (см. № 115). Эта маленькая задача построена очень остроумно  и интересно. Белые грозят  2. <span class="chess-piece">q</span>e5X. На  1. ... <span class="chess-piece">n</span>c4  последует  2. <span class="chess-piece">n</span>ab3X, на  1. ... <span class="chess-piece">n</span>d3  2. <span class="chess-piece">n</span>cb3X, на   1. ... <span class="chess-piece">r</span>c5 2. <span class="chess-piece">q</span>d2X, а на  1. ... <span class="chess-piece">r</span>e3  2. <span class="chess-piece">q</span>b4X.</p>
+
+  <p>Посмотрим теперь, как удалось сочетать полусвязывание с темой развязывания белой  фигуры. Тема развязывания сама по себе очень трудна, а поэтому сочетать её с  полусвязкой тоже сопряжено с большими техническими трудностями.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№116 Э. Вестбери </div>
+    <div class="problem-title">I пр. "G. C.", май 1917</div>
+    <pre class="chess-diagram" l_href="#diagram116.png">!""""""""#
+$*+rV*+*+%
+$+nWmPo+*%
+$*+mQo+*+%
+$+*+*+*+r%
+$*+l+*+*+%
+$PoB*Tb+*%
+$*+p+*+*K%
+$+n+*+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. <span class="chess-piece">b</span>f6).</div>
+
+  </div>
+
+  <p>В задаче № 116 мы видим как раз такое сочетание. Грозит 2. <span class="chess-piece">n</span>d2X. Черные могут  защититься ходом  1. ... <span class="chess-piece">q</span>a5, но на это последует  2. <span class="chess-piece">q</span>d4X  (прямое развязывание плюс полусвязка). В остальных же вариантах, где развязывается белый ферзь  ( 1. ... <span class="chess-piece">n</span>ce5  2. <span class="chess-piece">q</span>a6X,  1. ... <span class="chess-piece">n</span>de5  2. <span class="chess-piece">q</span>c5X , 1. ... e5  2. <span class="chess-piece">q</span>d5X),  момент полусвязывания уже не играет роли.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№117 А. Эллерман </div>
+    <div class="problem-title">I пр. "G. C.", март 1918</div>
+    <pre class="chess-diagram" l_href="#diagram117.png">!""""""""#
+$*+*VmR*+%
+$+*+*+w+n%
+$*+*+*+*+%
+$TrM*Tl+p%
+$*+q+*+o+%
+$O*+pO*Pv%
+$k+*N*+*+%
+$B*+*+b+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. <span class="chess-piece">n</span>f3).</div>
+
+  </div>
+
+  <p>Более полно и ярко эта комбинация проведена в задаче № 117. После первого хода  белых создается угроза  2. <span class="chess-piece">n</span>d4X. Тематические защиты черных:   1. ... <span class="chess-piece">n</span>b3 и  1. ... <span class="chess-piece">n</span>e6.  В первом случае белые отвечают  2. <span class="chess-piece">q</span>c8X (развязывание плюс полусвязка),  а во втором  2. <span class="chess-piece">q</span>e4X (развязывание, полусвязка плюс блокирование поля ).  На  1. ... <span class="chess-piece">r</span>e6 последует  2. <span class="chess-piece">q</span>f4X, но при этом  развязывании момент полусвязки не играет уже роли. В задаче  имеется еще ряд интересных вариантов, из которых ярче других вариант   1. ... <span class="chess-piece">r</span>e7  2. <span class="chess-piece">n</span>h4X.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№118 К. А. К. Ларсен </div>
+    <div class="problem-title">II пр. "G. C.", февраль 1920</div>
+    <pre class="chess-diagram" l_href="#diagram118.png">!""""""""#
+$*+*+*+*+%
+$+*+*Oq+*%
+$*+*+*+*O%
+$+o+n+*+t%
+$rKmOl+pO%
+$O*+*W*B*%
+$*Ot+r+*M%
+$+b+*N*+v%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">k</span>c5).</div>
+
+  </div>
+
+  <p>B задаче № 118 мы видим сочетание уже трех тем: полусвязки, развязывания и еще шахов  на вскрышку. Такое сочетание чрезвычайно трудно осуществимо, но в этой задаче оно  очень хорошо и искусно представлено. Грозит  2. <span class="chess-piece">q</span>f4X, но первым своим ходом белые  связали коня d5 и сделали возможными открытые шахи конем со стороны черных.  Но на безразличный шах конем (напр.  1. ... <span class="chess-piece">n</span>а5+ ) последует просто  2. <span class="chess-piece">b</span>xс2X (полусвязка). Поэтому черные должны так отойти конем, чтобы  одновременно защититься от этого мата. Для этого им нужно попасть конем на е5. Но на   1. ... <span class="chess-piece">n</span>e5 последует  2. <span class="chess-piece">n</span>с3X! (развязывание с полусвязкой).  Ha 1. ... d3+ белыe отвечают   2. <span class="chess-piece">r</span>xе3X (полусвязка).  На 1. ... е5 последует  2. <span class="chess-piece">n</span>f6X. Прекрасная и трудная задача!</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№119 Г. Венинк </div>
+    <div class="problem-title">III пр. "G. C.", июнь 1920</div>
+    <pre class="chess-diagram" l_href="#diagram119.png">!""""""""#
+$vQ*+r+*+%
+$K*ObTo+*%
+$mN*T*+*+%
+$R*+mL*+*%
+$*+*Wn+p+%
+$+*B*Pp+*%
+$*+*+*+*+%
+$V*+*+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">r</span>d5).</div>
+
+  </div>
+
+  <p>В задаче № 119 к этим трем темам добавлен еще один момент: развязывание черной фигуры.  В самом деле, после 1-го хода белых грозит 2. f4X. Как защищаться черным от этой  угрозы? Прежде всего, путем шаха. Но на 1. ... с6+ или  1. ... cb+ последует просто   2. <span class="chess-piece">r</span>:е7X (полусвязка).  Поэтому черные играют 1. ... с5+, развязывая черного коня d5 и  препятствуя указанному выше мату, Но своим ходом черные развязали также белого коня b6,  который и дает мат  2. <span class="chess-piece">n</span>d7X! Итак, в варианте 1. ... с5+  2. <span class="chess-piece">n</span>d7X  мы имеем четыре момента: шах на вскрышку, развязывание белой  фигуры, развязывание черной фигуры и полусвязку. Изумительное достижение!  Правда, задача получилась весьма громоздкой, но ведь и замысел исключительной  трудности. Есть в задаче и еще один красивый вариант  1. ... <span class="chess-piece">n</span>e5  (развязывая черного коня d5)  2. <span class="chess-piece">n</span>c4X (второе развязывание белого коня).</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№1  2. <span class="chess-piece">r</span>. А. Исаев </div>
+    <div class="problem-title">Конкурс журн. "64", 1925 (испр.)</div>
+    <pre class="chess-diagram" l_href="#diagram120.png">!""""""""#
+$*+*+*+*+%
+$+b+*+*+*%
+$*+w+r+*N%
+$Kq+*T*T*%
+$rMv+lNo+%
+$+*+*Po+*%
+$m+*+*P*+%
+$+*+*+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">k</span>b6).</div>
+
+  </div>
+
+  <p>Великолепную обработку сходной, но еще более оригинальной темы мы находим в задачс № 120.  Белые грозят матом Кd6. Защититься от этой угрозы белые могут разными способами, —  в первую очередь, развязывая своего ферзя. Но на 1. ... <span class="chess-piece">b</span>d5 последует   2. <span class="chess-piece">q</span>d3X!, так как белый ферзь развязан, а конь b4 стоит в полусвязке.  Таким образом, мы имеем здесь сочетание трех тем: развязывания черной фигуры, развязывания белой  фигуры и комбинации полусвязки. Но это же сочетание проведено еще в одном варианте:   1. ... <span class="chess-piece">n</span>d5 2. <span class="chess-piece">q</span>b1X! Прочие варианты:   1. ... <span class="chess-piece">k</span>f5  2. <span class="chess-piece">q</span>xe5X, —  1. ... <span class="chess-piece">r</span>xc6  2. <span class="chess-piece">n</span>xg5X.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№121 К. Шеппард </div>
+    <div class="problem-title">III пр. "G. C.", май 1919</div>
+    <pre class="chess-diagram" l_href="#diagram121.png">!""""""""#
+$*+b+*+r+%
+$+*+*+*+*%
+$*+*+*N*B%
+$+*+*+*To%
+$*+*+*+tV%
+$R*+*OoLv%
+$q+*+*+o+%
+$+*N*+*K*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. <span class="chess-piece">q</span>b2).</div>
+
+  </div>
+
+  <p>До сих пор мы знакомили наших читателей с такими задачами, где проводится лишь одна  система полусвязывания (системой полусвязывания мы называем позицию, где между  дальнобойной белой фигурой и черным королем стоят две черные фигуры, которые своей  игрой создают комбинацию полусвязки). Но таких систем в одной задаче может быть  и больше. Для примера берем задачу № 121. Здесь две таких системы: первая по  линии g, а вторая по третьей линии. Задача построена на Zugzwang. Тематические  варианты таковы:  1. ... <span class="chess-piece">r</span>g4 ~  2. <span class="chess-piece">n</span>:h5X —  1. ... <span class="chess-piece">r</span>e5  2. <span class="chess-piece">q</span>:e5X. — 1. ... <span class="chess-piece">r</span>а5 (b5, с5 и т. д.)  2. <span class="chess-piece">n</span>е4X, — 1. ... f2+  2. <span class="chess-piece">q</span>:f2X. — 1 ... с2  2. <span class="chess-piece">n</span>:е2X.  Итого — пять полусвязок. На  1. ... <span class="chess-piece">k</span>f4 последует  2. <span class="chess-piece">q</span>b8X.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№122 А. П. Гуляев. </div>
+    <div class="problem-title">"Шахматы", 1927</div>
+    <pre class="chess-diagram" l_href="#diagram122.png">!""""""""#
+$*+*+*+*+%
+$O*O*KoM*%
+$*+n+*+*O%
+$Rm+qVl+*%
+$v+o+*+rB%
+$On+t+*+p%
+$*+b+t+*+%
+$W*+*+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода ( 1. <span class="chess-piece">k</span>d7).</div>
+
+  </div>
+
+  <p>Полусвязка может быть не только открытой, но и скрытой, замаскированной. Пример такой  замаскированной системы полусвязки мы находим в задаче № 122. Белые грозят  2. <span class="chess-piece">n</span>с7X.  Черные в целях защиты должны играть конем b5, связывая коня с6. Но на 1. ... <span class="chess-piece">n</span>d4  последует  2. <span class="chess-piece">q</span>:f7X (развязывание с полусвязкой), а на 1. ... <span class="chess-piece">n</span>d6 2. <span class="chess-piece">q</span>f3X (то же самое). Полусвязка обнаруживается здесь лишь в самый последний момент, — после первого хода  белых она находится в замаскированном виде.</p>
+
+  <p>Заканчивая главу о полусвязывании, мы считаем необходимым указать на то, что мы и в  малой степени, не исчерпали всех комбинаций, скрытых в этой интереснейшей теме. Хотя  на поприще полусвязывания сделано и достигнуто ужо очень много, но мы отнюдь не считаем  эту область новой школы исчерпанной. Здесь возможна еще большая. и продуктивная работа.</p>
+
+  <p>В заключение помещаем две задачи К. Мэксфильда, где приведено максимальное количество  полусвязываний при интересной и острой игре.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№123 К. Мэнсфильд </div>
+    <div class="problem-title">1 пр. конк. "Hampshire Post", 1915</div>
+    <pre class="chess-diagram" l_href="#diagram123.png">!""""""""#
+$v+*+b+*+%
+$+p+*+m+*%
+$*+*Oo+*+%
+$Br+*+o+*%
+$lV*M*+*R%
+$+*+*+o+*%
+$pPt+t+*+%
+$K*NqW*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. <span class="chess-piece">b</span>c7).</div>
+
+  </div>
+
+  <p>Замечательная задача (№ 123) была одним из первых примеров обработки полного полусвязывания  и вызвала к жизни большое движение в области шахматной композиции. В этой задаче мы находим  6 полусвязок, а именно 1. ... <span class="chess-piece">b</span>a3 (защищаясь от угрозы   2. <span class="chess-piece">r</span>a5X)  2. b3X; — 1. ... <span class="chess-piece">b</span>a5   2. <span class="chess-piece">r</span>b6X(выключая слона c7); 1. ... <span class="chess-piece">b</span>c3  или c5   2. <span class="chess-piece">r</span>b3X! (пользуясь тем, что ладья c2, развязываемая этим ходом, отрезана от поля c6). — 1. ... <span class="chess-piece">b</span>d2  2. <span class="chess-piece">q</span>:c2X (так как ладья e2 перекрыта). —   1. ... <span class="chess-piece">n</span>:b5 2.b:a8<span class="chess-piece">q</span>X (пользуясь тем, что конь связан) и, наконец,   1. ... <span class="chess-piece">n</span>c6   2. <span class="chess-piece">r</span>a5X (при связаных слоне и коне). Всё это скомбинировано с изумительным мастерством.</p>
+
+  <div class="chess-problem">
+
+    <div class="problem-title">№124 К. Мэнсфильд </div>
+    <div class="problem-title">1 пр. конк. "El Ajedrez Argentino", 1926</div>
+    <pre class="chess-diagram" l_href="#diagram124.png">!""""""""#
+$*+*Vw+*+%
+$+b+m+*N*%
+$*+rQm+v+%
+$+*+*T*Tn%
+$*+*PlB*R%
+$+*+*P*O*%
+$*O*+p+*+%
+$+k+*+*+*%
+/(((((((()</pre>
+    <div class="problem-title">Мат в 2 хода (1. <span class="chess-piece">q</span>е7).</div>
+
+  </div>
+
+  <p>Вторая задча по замыслу весьма напоминает первую, но главную роль здесь играет не слон, а конь черных, стоящий в полусвязке. Прекрасный первый ход отдаёт королю свободное поле, но на  1. ... <span class="chess-piece">k</span>d5+ последует   2. <span class="chess-piece">r</span>c2X!  Грозит   2. <span class="chess-piece">r</span>:e6X. И вот, конь защищается:  1. ... <span class="chess-piece">n</span>:d4   2. <span class="chess-piece">r</span>c4X. — 1. ... <span class="chess-piece">n</span>:f4   2. <span class="chess-piece">r</span>:c3X (необходимо защитить поле e3). —  1. ... <span class="chess-piece">n</span>e5   2. <span class="chess-piece">r</span>:c5X. — 1. ... <span class="chess-piece">n</span>c7   2. <span class="chess-piece">r</span>:c7X. —  1. ... <span class="chess-piece">n</span>:g7   2. <span class="chess-piece">r</span>f6X (защищая поле f5). И, наконец,   1. ... <span class="chess-piece">r</span>d5! 2. <span class="chess-piece">b</span>:g5X. Задача, достойная высокой похвалы. К. Мэнсвильд  как был так и остаётся неподражаемым мастером в области полусвязывания.</p>
+  <hr />
+</body>
+
+</html>
